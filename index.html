@@ -133,6 +133,12 @@
 						<img class="stretch" data-src="content/e2e/trfWm78.jpg">
 					</section>
 					<section>
+						<img class="stretch" data-src="content/e2e/njua8.jpg">
+					</section>
+					<section>
+						<img class="stretch" data-src="content/e2e/Eyh1CBW.jpg">
+					</section>
+					<section>
 						Unit tests lack the bigger picture
 					</section>
 					<section>
@@ -150,7 +156,143 @@
 					<section>
 						End to end (E2E) testing
 					</section>
+					<section>
+						Test the entire stack
+						<p class="fragment">
+							front end and backend together
+						</p>
+					</section>
+					<section>
+						Slowest and hardest to debug
+					</section>
+					<section>
+						Not as comprehensive tests as unit and integration tests
+					</section>
+					<section>
+						Tests everything togheter (TODO change)
+					</section>
+					<section>
+						Happy path and smoke tests
+					</section>
 				</section>
+
+				<section>
+					<section>
+						Nightwatch
+					</section>
+					<section>
+						<img class="stretch" data-src="content/e2e/nightwatchlogo.PNG">
+					</section>
+					<section>
+						Browser Automation E2E testing framework
+					</section>
+					<section>
+						Write browser automation tests in nodejs using javascript
+					</section>
+					<section>
+						TODO more
+					</section>
+					<section>
+						Can run in parallel
+					</section>
+				</section>
+
+				<section>
+					<section>
+						Time for a live demo
+					</section>
+					<section>
+						First show off a but about bli medlem
+					</section>
+					<section>
+						<iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
+					</section>
+					<section>
+						Happy path bli medlem? evt birdid?
+					</section>
+				</section>
+
+				<section>
+					<section>
+						Time for some code
+					</section>
+					<section>
+						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+browser.url(browser.launchUrl)
+
+browser.waitForElementVisible('body', 1000)
+
+browser.click('button[type=submit]')
+
+browser.waitForElementVisible('input#Epost-field', 2500)
+
+browser.end()
+						</code></pre> 
+					</section>
+					<section>
+						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+module.exports = {
+	'@tags': ['happy'],
+	'Register BOB member': function (browser) {
+		browser.url(browser.launchUrl)
+		...
+	},
+};
+						</code></pre> 
+					</section>
+					
+					<section>
+						Requiers a bit of configuration, but it can be automated<br>
+						Needs Selenium<br>
+						Needs ChromeDriver
+					</section>
+					<section>
+						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+
+						</code></pre> 
+					</section>
+				</section>
+
+				<section>
+					<section>
+						Pros and cons
+					</section>
+
+					<section>
+						Challenge with so many systems
+						Talk about example from bli meldem with phone lookup person beein removed and DIBS locking our test card, and having a invalid https certificate
+					</section>
+				</section>
+
+				<section>
+					<section>
+						Alternatives
+					</section>
+					<section>
+						Protractor<br>
+						<img class="stretch" data-src="content/e2e/proractor.PNG">
+					</section>
+					<section>
+						"[...] end-to-end test framework for Angular and AngularJS applications"
+					</section>
+					<section>
+						Pros & cons
+					</section>
+
+					<section>
+						Cypress<br>
+						<img class="stretch" data-src="content/e2e/cypress.PNG">
+					</section>
+					<section>
+						Nightwatch with beter UI? can do the same?
+					</section>
+				</section>
+
+				<section>
+					My opinion
+				</section>
+
+
 
 				<section>
                     Jan Greger Hemb <br />
