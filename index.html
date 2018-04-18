@@ -41,14 +41,14 @@
 				<section>
 					<section>
 						A short story (about bli medlem from ngjs to ng5)
+                    </section>
+                    
+					<section>
+						<iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
 					</section>
 
 					<section>
 						Need code indepented tests
-					</section>
-
-					<section>
-						<iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
 					</section>
 
 					<section>
@@ -90,9 +90,9 @@
 							A few key points
 						</p>
 						<ul class="fragment">
-							<li>Test in isolation, but not in combination</li>
-							<li>Runs fast, and easy to debug</li>
-							<li>Don’t hit I/O</li>
+							<li class="fragment">Test in isolation, but not in combination</li>
+							<li class="fragment">Runs fast, and easy to debug</li>
+							<li class="fragment">Don’t hit I/O</li>
 						</ul>
 					</section>
 				</section>
@@ -110,11 +110,11 @@
 							A few key points
 						</p>
 						<ul class="fragment">
-							<li>Test two or more parts together</li>
-							<li>Runs slower that unit tests, and harder to debug</li>
-							<li>Confirms that parts of your application work together</li>
-							<li>Can hit I/O</li>
-							<li>Does test frontend and backend separately</li>
+							<li class="fragment">Test two or more parts together</li>
+							<li class="fragment">Does test frontend and backend separately</li>
+							<li class="fragment">Runs slower that unit tests, and harder to debug</li>
+							<li class="fragment">Confirms that parts of your application work together</li>
+							<li class="fragment">Can hit I/O</li>
 						</ul>
 					</section>
 				</section>
@@ -191,10 +191,19 @@
 					</section>
 					<section>
 						TODO more
-					</section>
+                    </section>
+                    <section>
+                        Visal feedback as you can watch the test
+                    </section>
+                    <section>
+                        Can help with learning the system for new developers
+                    </section>
 					<section>
 						Can run in parallel
-					</section>
+                    </section>
+                    <section>
+                        Free
+                    </section>
 				</section>
 
 				<section>
@@ -217,7 +226,7 @@
 						Time for some code
 					</section>
 					<section>
-						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+						<pre class=""><code class="TypeScript" data-trim contenteditable>
 browser.url(browser.launchUrl)
 
 browser.waitForElementVisible('body', 1000)
@@ -230,7 +239,7 @@ browser.end()
 						</code></pre> 
 					</section>
 					<section>
-						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+						<pre class=""><code class="TypeScript" data-trim contenteditable>
 module.exports = {
 	'@tags': ['happy'],
 	'Register BOB member': function (browser) {
@@ -247,21 +256,77 @@ module.exports = {
 						Needs ChromeDriver
 					</section>
 					<section>
+                        Run it
 						<pre class="fragment"><code class="TypeScript" data-trim contenteditable>
-
-						</code></pre> 
-					</section>
-				</section>
+                            npm install -g nightwatch
+                        </code></pre> 
+                        <pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+                            nightwatch
+                        </code></pre> 
+                    </section>
+                    <section>
+                        Config file
+                        <p class="fragment">
+                            Define enviormens, lauch params etc
+                        </p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        Writing tests
+                    </section>
+                    <section>
+                            <iframe style="width: 700px; height: 650px;" src="http://nightwatchjs.org/guide"></iframe>
+                    </section>
+                    <section>
+                        <iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
+                    </section>
+                    <section>
+                        Testcase?
+                    </section>
+                </section>
 
 				<section>
 					<section>
 						Pros and cons
-					</section>
+                    </section>
+                    <section>
+                        Can verify in individual browsers
+                    </section>
+                    
+                    <section>
+                        Can take screenshots
+                    </section>
+
+                    <section>
+                        Can verify your entire stack with one test
+                    </section>
+
+                    <section>
+                        Visual feedback
+                    </section>
+
+                    <section>
+                        Can run in headless
+                    </section>
+
+                    <section>
+                        Slow and a bit fradgile
+                    </section>
 
 					<section>
 						Challenge with so many systems
 						Talk about example from bli meldem with phone lookup person beein removed and DIBS locking our test card, and having a invalid https certificate
-					</section>
+                    </section>
+                    <section>
+                        Can detect js errors, not css errors
+                    </section>
+
+
+                    <section>
+                        Can document how to use application
+                    </section>
 				</section>
 
 				<section>
@@ -276,7 +341,7 @@ module.exports = {
 						"[...] end-to-end test framework for Angular and AngularJS applications"
 					</section>
 					<section>
-						Pros & cons
+						Angular spesific
 					</section>
 
 					<section>
@@ -285,12 +350,19 @@ module.exports = {
 					</section>
 					<section>
 						Nightwatch with beter UI? can do the same?
-					</section>
+                    </section>
+                    <section>
+                        Have to pay
+                    </section>
 				</section>
 
 				<section>
 					My opinion
-				</section>
+                </section>
+                
+                <section>
+                    http://nightwatchjs.org/
+                </section>
 
 
 
