@@ -34,7 +34,7 @@
 
                 <section>
                     <h2>
-						Nightwatch js
+						Nightwatch
                     </h2>
 				</section>
 
@@ -161,8 +161,11 @@
 						<p class="fragment">
 							front end and backend together
 						</p>
-					</section>
-					<section>
+                    </section>
+                    <section>
+                        Open the application in a browser window
+                    </section>
+					<!-- <section>
 						Slowest and hardest to debug
 					</section>
 					<section>
@@ -170,10 +173,19 @@
 					</section>
 					<section>
 						Tests everything togheter (TODO change)
-					</section>
+					</section> -->
 					<section>
 						Happy path and smoke tests
-					</section>
+                    </section>
+                    <section>
+                        Test core functionality
+                    </section>
+                    <section>
+						<iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
+                    </section>
+                    <section>
+                        Test what you can't with unit and integration tests
+                    </section>
 				</section>
 
 				<section>
@@ -187,10 +199,13 @@
 						Browser Automation E2E testing framework
 					</section>
 					<section>
-						Write browser automation tests in nodejs using javascript
-					</section>
+						Write browser automation tests in javascript
+                    </section>
+                    <section>
+                        Runds in nodejs enviorment
+                    </section>
 					<section>
-						TODO more
+						On top of selenium
                     </section>
                     <section>
                         Visal feedback as you can watch the test
@@ -204,6 +219,9 @@
                     <section>
                         Free
                     </section>
+                    <section>
+                        Not gigantic
+                    </section>
 				</section>
 
 				<section>
@@ -211,13 +229,13 @@
 						Time for a live demo
 					</section>
 					<section>
-						First show off a but about bli medlem
+						Bli Medlem
 					</section>
 					<section>
 						<iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
 					</section>
 					<section>
-						Happy path bli medlem? evt birdid?
+						Happy path bli medlem
 					</section>
 				</section>
 
@@ -229,11 +247,13 @@
 						<pre class=""><code class="TypeScript" data-trim contenteditable>
 browser.url(browser.launchUrl)
 
-browser.waitForElementVisible('body', 1000)
+browser.waitForElementVisible('input#Epost-field', 2500)
+
+browser.setValue('input#Epost-field', 'jan.greger@gmail.com')
+
+browser.pause(500)
 
 browser.click('button[type=submit]')
-
-browser.waitForElementVisible('input#Epost-field', 2500)
 
 browser.end()
 						</code></pre> 
@@ -270,6 +290,10 @@ module.exports = {
                             Define enviormens, lauch params etc
                         </p>
                     </section>
+
+                    <section>
+                        <iframe style="width: 700px; height: 650px;" src="http://nightwatchjs.org"></iframe>
+                    </section>
                 </section>
                 
                 <section>
@@ -277,13 +301,25 @@ module.exports = {
                         Writing tests
                     </section>
                     <section>
-                            <iframe style="width: 700px; height: 650px;" src="http://nightwatchjs.org/guide"></iframe>
+                        <iframe style="width: 700px; height: 650px;" src="http://nightwatchjs.org/guide"></iframe>
                     </section>
                     <section>
                         <iframe style="width: 700px; height: 650px;" src="https://blimedlem.bbl.no/USBL/"></iframe>
                     </section>
                     <section>
                         Testcase?
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        How does nightwatch work?
+                    </section>
+                    <section>
+                        Web drivers
+                    </section>
+                    <section>
+                        <img class="stretch" data-src="content/e2e/nightwatchToO.PNG">
                     </section>
                 </section>
 
@@ -315,12 +351,20 @@ module.exports = {
                         Slow and a bit fradgile
                     </section>
 
+                    <section>
+                        Can test other systems/websites
+                    </section>
+
 					<section>
 						Challenge with so many systems
 						Talk about example from bli meldem with phone lookup person beein removed and DIBS locking our test card, and having a invalid https certificate
                     </section>
                     <section>
                         Can detect js errors, not css errors
+                    </section>
+                    
+                    <section>
+                        Need to get Selenium and Driver
                     </section>
 
 
@@ -341,7 +385,11 @@ module.exports = {
 						"[...] end-to-end test framework for Angular and AngularJS applications"
 					</section>
 					<section>
-						Angular spesific
+                        Angular spesific
+                        <p class="fragment">
+                            Harder syntax
+                        </p>
+                        
 					</section>
 
 					<section>
